@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#body{
+    background-image: url(./images/5-tips-for-productive-meetings-header.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 66, 178, 0.438);}
+
+
+/*--start of navbar--*/
+
+nav{
+    margin: 0;
+    background-color: rgba(48,67,175,0.9);
+}
+
+nav ul{
+    font-size: 19px;
+}
+nav ul li{
+    margin: 0 15px;
+}
+/*--end navbar*/
+
+/*--start formulaire*/
+#contacting{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/group-diverse-people-having-business-meeting.jpg);
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.container-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.left{
+    height: 100%;
+    background: url(./images/group-diverse-people-having-business-meeting.jpg) no-repeat center;
+    background-size: cover;
+
+}
+.right{
+    padding: 25px 40px;
+}
+.right h2{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.right h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #7668f8;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color:#7668f84f;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+.field:hover{
+    background-color:#c802fa3d;
+}
+.field:focus{
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.247);
+}
+area{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background-color: #c702fa;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color:#c702fa ;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #7668f8;
+
+}
+
+
+
+/*--meeting---*/
+.meeting-text{
+    position: relative;
+    text-align: center;
+    top: 200px;
+}
+
+.meeting-text h5{
+    color: white;
+    font-weight: 400;
+    margin: 0;
+}
+.meeting-text h1{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+.buttons-text{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 250px;
+}
+.buttons-text #button1{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: #7668f8;
+
+}
+.buttons-text #button2{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: #c702fa;
+}
+
+.sec-section{
+    border: 1px solid white;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    top: 400px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+.sec-section .text h3{
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+}
+.sec-section .icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 80px;
+}
+.sec-section .icons img{
+    position: relative;
+    margin: 0 auto;
+}
+.sec-section .icon-title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 100px;
+}
+.sec-section .icon-title h4{
+    position: relative;
+    margin: 0 auto;
+}
+.sec-section .paragraphs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 110px;
+}
+
+.third-section{
+    border: 2Px solid white;
+    background-image: url(./images/group-diverse-people-having-business-meeting.jpg);
+    background-size: cover;
+    background-position: 20px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    top: 700px;
+}
+.third-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 66, 178, 0.438);}
+.third-section .play-icon img{
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: 720px;
+    top: 80px;
+}
+.third-section .text-video{
+    position: relative;
+    text-align: center;
+    top: 80px;
+}
+.third-section .text-video h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fourth{
+    border: 1px solid rgba(128, 128, 128, 0.023);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 80vh;
+    top: 900px;
+    background-color: rgba(128, 128, 128, 0.048);
+}
+.fourth .guy-image img{
+    position: relative;
+    top: 60px;
+    left: 170px;
+    border-radius: 25px;
+}
+.fourth .guy-text h1{
+      position: relative;
+      top: 60px;
+      font-weight: bolder;
+      color: black;
+}
+.fourth .guy-text ul{
+    position: relative;
+    font-size: 20px;
+    top: 60px;
+    margin-top: 60px;
+    color: black;
+}
+.fourth .guy-text button{
+    position: relative;
+    background-color: #7668f8;
+    width: 120px;
+    top: 130px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.fifth{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 1000px;
+    
+}
+.fifth img{
+    position: relative;
+    left: 40px;
+}
+.fifth h2{
+    position: relative;
+    left: 60px;
+    margin-top: 0;
+    color: #7668f8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fifth p{
+    position: relative;
+    left: 60px;
+    margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px
+}
+
+.progress div {
+    background-color: red
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
+}
+
+
+
